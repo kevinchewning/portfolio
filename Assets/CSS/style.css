@@ -7,6 +7,8 @@
     --text-2: #07c700;
     --text-3: #7d7d7d;
     --text-4: #000;
+    --font-1: monospace, sans-serif;
+    --font-2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-1);
     background-color: var(--background-1);
     color: var(--text-2);
 }
@@ -44,7 +46,7 @@ header h1::after {
 header nav {
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-2);
     color: var(--text-3);
 }
 
@@ -72,7 +74,7 @@ header nav ul li a {
 }
 
 #about-me h2 {
-    flex: 0 0 18%;
+    flex: 0 0 24%;
     height: 200px;
     max-width: 200px;
     min-width: 200px;
@@ -80,6 +82,8 @@ header nav ul li a {
     background-image: url("../Images/Self-Portrait.jpg");
     background-size: 100% 100%;
     border: 5px solid var(--background-1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--background-3);
     margin-bottom: 25px;
 }
 
@@ -89,13 +93,66 @@ header nav ul li a {
     right: 0px;
     background-color: var(--background-1);
     color: var(--text-2);
+    font-family: var(--font-1);
+    margin-right: -1px;
 }
 
 #about-me p {
-    flex: 0 0 78%;
+    flex: 0 0 72%;
     padding-left: 10px;
     order: 2;
     margin-bottom: 25px;
+}
+
+#work {
+}
+
+#work h2 {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    text-align: right;
+    font-family: var(--font-1);
+    padding-top: 50px;
+}
+
+#work h2 span {
+    background-color: var(--background-1);
+    color: var(--text-2);
+    margin-right: -1px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    float: right;
+    border-left: 5px solid var(--background-1);
+    font-family: var(--font-2);
+}
+
+#project-1 {
+    flex: 0 0 98%;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid var(--background-1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--background-3);
+    margin-bottom: 25px;
+    background-image: url("https://www.fillmurray.com/640/360");
+}
+
+#project {
+    flex: 0 0 48%;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid var(--background-1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--background-3);
+    margin-bottom: 25px;
+    background-image: url("https://www.fillmurray.com/640/360");
 }
 
 @media screen and (max-width:854px) {
@@ -132,6 +189,10 @@ header nav ul li {
 
 #about-me p {
     flex: 0 0 90%;
+}
+
+#project {
+    flex: 0 0 98%;
 }
 
 }
