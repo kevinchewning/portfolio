@@ -65,15 +65,16 @@ header nav ul li a {
     text-decoration: inherit;
   }
 
-#about-me {
+.about-me {
     width: 100%;
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-#about-me h2 {
+.about-me h2 {
     flex: 0 0 24%;
     height: 200px;
     max-width: 200px;
@@ -87,7 +88,7 @@ header nav ul li a {
     margin-bottom: 25px;
 }
 
-#about-me h2 span {
+.about-me h2 span {
     position: absolute;
     bottom: 8px;
     right: 0px;
@@ -97,17 +98,19 @@ header nav ul li a {
     margin-right: -1px;
 }
 
-#about-me p {
+.about-me p {
     flex: 0 0 72%;
     padding-left: 10px;
     order: 2;
     margin-bottom: 25px;
+    font-family: var(--font-2);
+    text-indent: 50px;
 }
 
-#work {
+.work {
 }
 
-#work h2 {
+.work h2 {
     display: inline-block;
     position: relative;
     width: 20%;
@@ -117,7 +120,7 @@ header nav ul li a {
     padding-top: 50px;
 }
 
-#work h2 span {
+.work h2 span {
     background-color: var(--background-1);
     color: var(--text-2);
     margin-right: -1px;
@@ -155,6 +158,36 @@ header nav ul li a {
     background-image: url("https://www.fillmurray.com/640/360");
 }
 
+.contact-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-1);
+    list-style-type: none;
+}
+
+.contact-box {
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-box img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.contact-box a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-2);
+    color: var(--text-3);
+}
+
 @media screen and (max-width:854px) {
 
 header {
@@ -183,16 +216,30 @@ header nav ul li {
 
 @media screen and (max-width:768px) {
 
-#about-me h2 {
+.about-me h2 {
     flex: 0 0 50%;
 }
 
-#about-me p {
+.about-me p {
     flex: 0 0 90%;
 }
 
 #project {
     flex: 0 0 98%;
+}
+
+.contact-me {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact-box {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
 }
 
 }
