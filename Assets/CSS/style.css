@@ -179,6 +179,11 @@ header nav ul li a {
     display: inline-block;
     height: 50px;
     width: 50px;
+    margin-right: 10px;
+}
+
+#email-icon {
+    height:40px;
 }
 
 .contact-box a {
