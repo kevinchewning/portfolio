@@ -12,7 +12,7 @@ Download repository from https://github.com/kevinchewning/portfolio
 
 Site can be viewed at https://kevinchewning.github.io/portfolio/
 
-![Site Screenshot](assets/images/portfolio-screenshot.png)
+![Site Screenshot](Assets/Images/portfolio-screenshot.png)
 
 ## Credits
 
