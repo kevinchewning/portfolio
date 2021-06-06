@@ -275,3 +275,23 @@ header nav ul li {
 }
 
 }
+
+@media (any-pointer: fine) {
+
+#project-1 {
+    transition: all .2s ease-in-out;
+}
+
+#project-1:hover {
+    transform: scale(1.1) translate(-5%,0%);
+}
+
+#project {
+    transition: all .2s ease-in-out;
+}
+
+#project:hover {
+    transform: scale(1.1) translate(-5%,0%);
+}
+
+}
