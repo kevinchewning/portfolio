@@ -156,6 +156,34 @@ header nav ul li a {
     position: relative;
 }
 
+#project-2 {
+    background-image: url("https://github.com/kevinchewning/Password-Generator/blob/main/assets/images/pg-screenshot.png?raw=true");
+    background-size: cover;
+}
+
+#project-3 {
+    background-image: url("https://github.com/kevinchewning/Code-Quiz/raw/main/assets/images/cq-screenshot.JPG");
+    background-size: cover;
+}
+
+#project-4 {
+    background-image: url("https://github.com/kevinchewning/Work-Day-Scheduler/raw/main/Assets/wds-screenshot.PNG");
+    background-size: cover;
+}
+
+#project-5 {
+    background-image: url("https://github.com/kevinchewning/Weather-Dashboard/raw/main/assets/images/wd-screenshot.png");
+    background-size: cover;
+}
+
+#project-6 {
+    display: none;
+}
+
+#project-7 {
+    display: none;
+}
+
 .project-text-box {
     position: absolute;
     bottom: 8px;
@@ -173,7 +201,7 @@ header nav ul li a {
     font-size: 80%;
 }
 
-#project {
+.project {
     flex: 0 0 48%;
     height: 300px;
     padding: 10px;
@@ -286,11 +314,11 @@ header nav ul li {
     transform: scale(1.1) translate(-5%,0%);
 }
 
-#project {
+.project {
     transition: all .2s ease-in-out;
 }
 
-#project:hover {
+.project:hover {
     transform: scale(1.1) translate(-5%,0%);
 }
 
