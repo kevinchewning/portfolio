@@ -3,27 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./Assets/CSS/reset.css">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Kevin Chewning Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Kevin Chewning</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
+    <header class ="navbar">
+        <div class="navbar-brand is-flex is-justify-content-space-evenly">
+            <a class="navbar-item">
+                <h1 class="title" id="header">Kevin Chewning</h1>
+            </a>
+            
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <nav class="navbar-menu" id="navbar-menu">
+            <div class="navbar-start"></div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="#work">Work</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="#contact-me">Contact Me</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="#about-me">About Me</a>
+            </div>             
         </nav>
     </header>
 
@@ -92,26 +103,31 @@
     <footer>
         <ul class="contact-me" id="contact-me">
             <li class="contact-box">
-                <img src="./Assets/Images/phone-icon.png" alt="phone">
+                <img src="./assets/images/phone-icon.png" alt="phone">
                 <a href="tel:5863390568">(586)339-0568</a>
             </li>
 
             <li class="contact-box">
-                <img id="email-icon" src="./Assets/Images/email-logo.png" alt="email">
+                <img id="email-icon" src="./assets/images/email-logo.png" alt="email">
                 <a href="mailto:klcbusiness@hotmail.com">klcbusiness@hotmail.com</a>
             </li>
 
             <li class="contact-box">
-                <img src="./Assets/Images/linked-in-logo.png" alt="LinkedIn">
+                <img src="./assets/images/linked-in-logo.png" alt="LinkedIn">
                 <a href="https://www.linkedin.com/in/kevin-chewning-63973715/">LinkedIn</a>
             </li>
 
             <li class="contact-box">
-                <img src="./Assets/Images/github-logo.png" alt="Github">
+                <img src="./assets/images/github-logo.png" alt="Github">
                 <a href="https://github.com/kevinchewning">Github</a>
             </li>
         </ul>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+
+    <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>
