@@ -22,11 +22,28 @@ body {
     font-size: 1.5rem;
 }
 
-header {
+.navbar {
     padding: 20px;
-    font-family: var(--font-1);
     background-color: var(--background-1);
+}
+
+.navbar-item:hover, .navbar-item:active, .navbar-item:focus {
+    background-color: var(--background-1)!important;
+    color: white!important;
+}
+
+#header {
     color: var(--text-2);
+    font-family: var(--font-1);
+}
+
+.navbar-burger, .navbar-burger:hover {
+    color: var(--text-2);
+    transform: scale(1.5);
+}
+
+.navbar-item, .navbar-link {
+    color: var(--text-3);
 }
 
 header h1 {
@@ -43,27 +60,14 @@ header h1::after {
     content: ">"
 }
 
-header nav {
-    margin-right: 20px;
-    float: right;
-    font-family: var(--font-2);
-    color: var(--text-3);
+#navbar-menu {
+    position: absolute;
+    right: 0;
 }
 
-header nav ul {
-    list-style-type: none;
+.display-block {
+    display: block;
 }
-
-header nav ul li {
-    display: inline-block;
-    padding-top: 5%;
-    margin-left: 25px;
-}
-
-header nav ul li a {
-    color: inherit;
-    text-decoration: inherit;
-  }
 
 .about-me {
     width: 100%;
@@ -80,11 +84,11 @@ header nav ul li a {
     max-width: 200px;
     min-width: 200px;
     position: relative;
-    background-image: url("../Images/Self-Portrait.jpg");
+    background-image: url("../images/Self-Portrait.jpg");
     background-size: 100% 100%;
     border: 5px solid var(--background-1);
     border-radius: 10px;
-    box-shadow: 5px 5px 5px var(--background-3);
+    box-shadow: 2px 2px 5px var(--background-3);
     margin-bottom: 25px;
 }
 
@@ -108,10 +112,6 @@ header nav ul li a {
     margin-bottom: 25px;
     font-family: var(--font-2);
     text-indent: 50px;
-}
-
-.work {
-    
 }
 
 .work h2 {
@@ -157,22 +157,22 @@ header nav ul li a {
 }
 
 #project-2 {
-    background-image: url("https://github.com/kevinchewning/Password-Generator/blob/main/assets/images/pg-screenshot.png?raw=true");
+    background-image: url("https://github.com/kevinchewning/Password-Generator/blob/main/pg-screenshot.png?raw=true");
     background-size: cover;
 }
 
 #project-3 {
-    background-image: url("https://github.com/kevinchewning/Code-Quiz/raw/main/assets/images/cq-screenshot.JPG");
+    background-image: url("https://github.com/kevinchewning/Code-Quiz/raw/main/cq-screenshot.JPG");
     background-size: cover;
 }
 
 #project-4 {
-    background-image: url("https://github.com/kevinchewning/Work-Day-Scheduler/raw/main/Assets/wds-screenshot.PNG");
+    background-image: url("https://github.com/kevinchewning/Work-Day-Scheduler/raw/main/wds-screenshot.PNG");
     background-size: cover;
 }
 
 #project-5 {
-    background-image: url("https://github.com/kevinchewning/Weather-Dashboard/raw/main/assets/images/wd-screenshot.png");
+    background-image: url("https://github.com/kevinchewning/Weather-Dashboard/raw/main/wd-screenshot.png");
     background-size: cover;
 }
 
